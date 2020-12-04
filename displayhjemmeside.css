@@ -1,4 +1,7 @@
-*{box-sizing: border-box;}
+*{box-sizing: border-box;
+padding: 0%;
+margin: 0%;
+}
 
 .wrapper > * {
   background-color: #FFFFFF;
@@ -6,12 +9,14 @@
   padding: 0px;
   margin: 0px;
   font-size: 3rem;
+  font-family: news gothic;
 }
 
 /* Mobile first*/
 
 .wrapper{
-  max-width: inherit;
+  max-width: 100%;
+  height: 100vh;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 1fr;
@@ -26,9 +31,10 @@
 
 body{
   background-color: #FFFFFF;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
-
-
 
 .item{
   flex-grow: 1;
@@ -38,14 +44,12 @@ ul{
   list-style: none;
   color: #e8b7b7;
   align-items: center;
-  font-family: ;
   justify-content: space-between;
 }
 
 a{
   color: #FFFFFF;
   align-items: center;
-  font-family: ;
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -63,6 +67,20 @@ a:hover{
   font-size: 2rem;
 }
 
+.icons {
+  background-color: #e8b7b7;
+  color: #FFFFFF;
+  text-decoration: none;
+  grid-area: nav;
+  align-items: center;
+  align-items: stretch;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50%;
+  margin-right: 5%;
+}
+
 .nav {
   grid-area: nav;
   background-color: #e8b7b7;
@@ -71,19 +89,24 @@ a:hover{
 .navigation{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #e8b7b7;
   height: 30px;
   width: 100%;
-  padding: 2;
-  margin: 0;
+  padding: 2px;
+  margin: 0px;
   font-size: 2rem;
 }
 
 /* Billede*/
+
 .logo {
-  height: 15rem;
+  grid-area: header;
   width: auto;
+  height: 10rem;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
   margin-left: 20%;
   margin-right: 20%;
 }
@@ -93,7 +116,9 @@ a:hover{
   background-color: #FFFFFF;
   line-height: 1.5rem;
   font-size: 1rem;
+  padding: 10px;
 }
+
 p{
   font-family: bold;
 }
@@ -112,20 +137,75 @@ p{
   font-size: 1rem;
 }
 
+.website{
+  display: none;
+}
+
+
+  .drop{
+    background-color: #e8b7b7;
+    color: #FFFFFF;
+    border: none;
+    margin-left: 40%;
+    margin-bottom: 40%;
+
+  }
+
+  .dropdown{
+    position: absolute;
+    display: inline-block;
+    float: left;
+    margin-left: 10%;
+  }
+
+  .dropdownnav{
+    display: none;
+    position: absolute;
+    background-color: #e8b7b7;
+    z-index: auto;
+    width: 200px;
+    z-index: 1;
+  }
+
+  .dropdownnav a{
+    color: #FFFFFF;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdownnav a:hover{
+    background-color: #D6A7A7;
+  }
+
+  .dropdown:hover .dropdownnav{
+    display: block;
+  }
+
+  .dropdown:hover .drop{
+    background-color: #D6A7A7;
+  }
+
+
+button{
+  background-color: #e8b7b7;
+  color: #FFFFFF;
+}
+
+
 /* Ipad version */
 
-@media (min-width: 400px) {
+@media (min-width:400px) {
   .wrapper {
     display: grid;
     grid-gap: 5px;
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
-    "header nav"
+    "header  nav"
     "content content"
     "content content"
-    "footer footer"
+    "footer  footer"
   }
-}
 
 body{
   background-color: #FFFFFF;
@@ -139,14 +219,12 @@ ul{
   list-style: none;
   color: #e8b7b7;
   align-items: center;
-  font-family: ;
   justify-content: space-between;
 }
 
 a{
   color: #FFFFFF;
   align-items: center;
-  font-family: ;
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -164,6 +242,20 @@ a:hover{
   font-size: 2rem;
 }
 
+.icons {
+  background-color: #e8b7b7;
+  color: #FFFFFF;
+  text-decoration: none;
+  float: right;
+  grid-area: nav;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  grid-area: nav;
+}
+
 .nav {
   grid-area: nav;
   background-color: #e8b7b7;
@@ -171,15 +263,30 @@ a:hover{
 
 .navigation{
   display: flex;
+  border: solid;
   flex-direction: row;
   justify-content: center;
   background-color: #e8b7b7;
-  height: 30px;
+  height: auto;
   width: 100%;
-  padding: 2;
-  margin: 0;
+  padding: 2px;
+  margin: 0px;
   font-size: 2rem;
 }
+
+.tabletmenu{
+  flex-direction: row;
+  display: flex;
+}
+
+.website{
+  display: block;
+}
+
+.dropdown{
+  display: none;
+}
+
 
 /* Billede*/
 .logo {
@@ -213,12 +320,12 @@ p{
   color: #FFFFFF;
   font-size: 1rem;
 }
-
+}
 
 
 /* Web version*/
 
-@media (min-width: 800px) {
+@media only and (min-width: 800px) {
   .wrapper{
     display: grid;
     grid-gap: 5px;
@@ -229,5 +336,4 @@ p{
     "content content content"
     "footer footer footer"
   }
-
 }
