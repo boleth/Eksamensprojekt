@@ -13,19 +13,17 @@ margin: 0%;
 }
 
 /* Mobile first*/
-
+@media (max-width: 400px){
 .wrapper{
   max-width: 100%;
-  height: 100vh;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 1fr;
   grid-template-areas:
   "header"
-  "nav"
+  "navi"
   "content"
   "footer"
-  "ad"
 }
 
 
@@ -37,7 +35,7 @@ body{
 }
 
 .item{
-  flex-grow: 1;
+  flex-grow: 2;
 }
 
 ul{
@@ -53,7 +51,6 @@ a{
   display: inline-block;
   width: 100%;
   height: 100%;
-  font-size: 1rem;
   text-decoration: none;
 }
 
@@ -79,6 +76,8 @@ a:hover{
   justify-content: space-between;
   margin-left: 50%;
   margin-right: 5%;
+  margin-bottom: 5%;
+  font-size: 1.5rem;
 }
 
 .nav {
@@ -86,17 +85,7 @@ a:hover{
   background-color: #e8b7b7;
 }
 
-.navigation{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #e8b7b7;
-  height: 30px;
-  width: 100%;
-  padding: 2px;
-  margin: 0px;
-  font-size: 2rem;
-}
+
 
 /* Billede*/
 
@@ -107,15 +96,15 @@ a:hover{
   justify-content: center;
   margin-bottom: 10px;
   margin-top: 10px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .content {
   grid-area: content;
   background-color: #FFFFFF;
   line-height: 1.5rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   padding: 10px;
 }
 
@@ -124,8 +113,8 @@ p{
 }
 
 /* Billede */
-.selvportraet{
-  height: 10rem;
+.portraet{
+  height: 15rem;
   width:auto;
   float: right;
 }
@@ -146,8 +135,9 @@ p{
     background-color: #e8b7b7;
     color: #FFFFFF;
     border: none;
-    margin-left: 40%;
+    margin-left: 30%;
     margin-bottom: 40%;
+    font-size: 1.4rem;
 
   }
 
@@ -156,6 +146,7 @@ p{
     display: inline-block;
     float: left;
     margin-left: 10%;
+    font-size: 1.2rem;
   }
 
   .dropdownnav{
@@ -193,18 +184,19 @@ button{
 }
 
 
+}
 /* Ipad version */
 
-@media (min-width:400px) {
+@media (min-width: 400px) {
   .wrapper {
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 0px;
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
-    "header  nav"
+    "header nav"
+    "menu menu"
     "content content"
-    "content content"
-    "footer  footer"
+    "footer footer"
   }
 
 body{
@@ -228,7 +220,6 @@ a{
   display: inline-block;
   width: 100%;
   height: 100%;
-  font-size: 1rem;
   text-decoration: none;
 }
 
@@ -236,52 +227,53 @@ a:hover{
   background-color: #D6A7A7;
 }
 .header{
-  grid-area: header;
   background-color: #e8b7b7;
   color: #FFFFFF;
   font-size: 2rem;
 }
 
-.icons {
+.icons{
   background-color: #e8b7b7;
   color: #FFFFFF;
   text-decoration: none;
   float: right;
-  grid-area: nav;
   align-items: center;
   flex-direction: row;
   display: flex;
   justify-content: space-between;
   margin: 10px;
-  grid-area: nav;
+  font-size: 20px;
 }
 
-.nav {
-  grid-area: nav;
-  background-color: #e8b7b7;
+.nav{
+  background: #e8b7b7;
+  color: #FFFFFF;
+  font-size: 1.5rem;
 }
 
-.navigation{
-  display: flex;
-  border: solid;
-  flex-direction: row;
-  justify-content: center;
+.menu {
   background-color: #e8b7b7;
-  height: auto;
-  width: 100%;
-  padding: 2px;
-  margin: 0px;
   font-size: 2rem;
+  color: #FFFFFF;
+}
+
+.webmenu{
+  grid-area: menu;
+  background-color: #e8b7b7;
+  color: #FFFFFF;
+  font-size: 25px;
 }
 
 .tabletmenu{
   flex-direction: row;
   display: flex;
+  margin-left: 15%;
 }
 
 .website{
   display: block;
 }
+
 
 .dropdown{
   display: none;
@@ -290,10 +282,11 @@ a:hover{
 
 /* Billede*/
 .logo {
-  height: 15rem;
+  height: 10rem;
   width: auto;
-  margin-left: 20%;
-  margin-right: 20%;
+  float: left;
+  grid-area: header;
+  margin: 10%;
 }
 
 .content {
@@ -301,14 +294,19 @@ a:hover{
   background-color: #FFFFFF;
   line-height: 1.5rem;
   font-size: 1rem;
+  background-image: url(flower.gif);
+  margin: 30px;
 }
+
+
+
 p{
   font-family: bold;
 }
 
 /* Billede */
-.selvportraet{
-  height: 10rem;
+.portraet{
+  height: 20rem;
   width:auto;
   float: right;
 }
@@ -319,13 +317,14 @@ p{
   background-color: #e8b7b7;
   color: #FFFFFF;
   font-size: 1rem;
-}
+  }
+
 }
 
 
 /* Web version*/
 
-@media only and (min-width: 800px) {
+@media (min-width: 800px) {
   .wrapper{
     display: grid;
     grid-gap: 5px;
