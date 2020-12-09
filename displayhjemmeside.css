@@ -74,8 +74,8 @@ a:hover{
   display: flex;
   justify-content: space-between;
   padding-left: 50%;
-  padding-right: 5%;
   padding-bottom: 5%;
+  padding-top: 5%;
   font-size: 1.5rem;
   grid-area: menu;
 }
@@ -106,19 +106,17 @@ nav {
   line-height: 1.5rem;
   font-size: 1.3rem;
   padding: 3rem;
-  background-image: url(flower.gif);
 }
 
-p{
-  font-family: bold;
-}
+
 
 /* Billede */
 .portraet{
   height: 15rem;
   width:auto;
-  justify-content: center;
-
+  padding-left: 20%;
+  padding-top: 10%;
+  margin: 0px;
 }
 
 .footer{
@@ -126,6 +124,7 @@ p{
   background-color: #e8b7b7;
   color: #FFFFFF;
   font-size: 1rem;
+  padding-left: 10%;
 }
 
 .website{
@@ -137,8 +136,9 @@ p{
     background-color: #e8b7b7;
     color: #FFFFFF;
     border: none;
-    margin-left: 30%;
+    margin-left: 15%;
     margin-bottom: 40%;
+    margin-top: 20%;
     font-size: 1.4rem;
     grid-area: menu;
 
@@ -158,7 +158,6 @@ p{
     position: absolute;
     background-color: #e8b7b7;
     z-index: auto;
-    padding-top: 0rem;
     width: 200px;
     z-index: 1;
   }
@@ -183,33 +182,18 @@ p{
   }
 
 h1{
+  font-size: 1.5rem;
+  color: #696969;
+  padding-left: 5%;
+  line-height: 3rem;
+
+}
+
+p{
   font-size: 1rem;
   color: #696969;
-  margin: 1.5rem;
-}
-
-h2{
-  color: #696969;
-  font-size: 2rem;
-  margin: 1.5rem;
-
-}
-h3{
-  margin: 1.5rem;
-  color: #696969;
-  margin: 1.5rem;
-}
-
-h4{
-  font-size: 1rem;
-  color: #696969;
-  margin: 1.5rem;
-}
-
-h5{
-  font-size: 2rem;
-  color: #696969;
-  margin: 1.5rem;
+  padding-left: 5%;
+  line-height: 1.5rem;
 }
 
 button{
@@ -224,8 +208,9 @@ button{
   padding-left: 1rem;
   padding-right: 1rem;
   grid-area: content;
-  margin-left: 20%;
+  margin-left: 10%;
   margin-top: 10%;
+  font-size: 1.2rem;
 }
 
 .ommigknap{
@@ -234,7 +219,8 @@ button{
   padding-left: 1rem;
   padding-right: 1rem;
   grid-area: content;
-  margin-left: 10%;
+  margin-left: 5%;
+  font-size: 1.2rem;
 }
 
 /* Undersider*/
@@ -373,11 +359,48 @@ a:hover{
   margin: 30px;
 }
 
+h1{
+  font-size: 2rem;
+  color: #696969;
+  padding-left: 5%;
+  line-height: 3.5rem;
 
+}
 
 p{
-  font-family: bold;
+  font-size: 1.5rem;
+  color: #696969;
+  padding-left: 5%;
+  line-height: 2rem;
 }
+
+button{
+  background-color: #696969;
+  color: #FFFFFF;
+  padding: 0.5rem;
+}
+
+.kontaktknap{
+  border-radius: 2rem;
+  border: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  grid-area: content;
+  margin-left: 10%;
+  margin-top: 10%;
+  font-size: 1.2rem;
+}
+
+.ommigknap{
+  border-radius: 2rem;
+  border: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  grid-area: content;
+  margin-left: 5%;
+  font-size: 1.2rem;
+}
+
 
 /* Billede */
 .portraet{
@@ -504,14 +527,49 @@ p{
     background-color: #FFFFFF;
     line-height: 1.5rem;
     font-size: 1rem;
-    background-image: url(flower.gif);
     margin: 30px;
   }
 
+  h1{
+    font-size: 3rem;
+    color: #696969;
+    padding-left: 5%;
+    line-height: 4.5rem;
 
+  }
 
   p{
-    font-family: bold;
+    font-size: 1.5rem;
+    color: #696969;
+    padding-left: 5%;
+    line-height: 2rem;
+  }
+
+  button{
+    background-color: #696969;
+    color: #FFFFFF;
+    padding: 0.5rem;
+  }
+
+  .kontaktknap{
+    border-radius: 2rem;
+    border: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    grid-area: content;
+    margin-left: 10%;
+    margin-top: 10%;
+    font-size: 1.2rem;
+  }
+
+  .ommigknap{
+    border-radius: 2rem;
+    border: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    grid-area: content;
+    margin-left: 5%;
+    font-size: 1.2rem;
   }
 
   /* Billede */
