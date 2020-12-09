@@ -76,6 +76,7 @@ a:hover{
   padding-left: 50%;
   padding-bottom: 5%;
   padding-top: 5%;
+  padding-right: 5%;
   font-size: 1.5rem;
   grid-area: menu;
 }
@@ -119,12 +120,30 @@ nav {
   margin: 0px;
 }
 
+.havnen{
+  height: 9rem;
+  width: auto;
+  margin: 5%;
+}
+
+.ur{
+  height: 9rem;
+  width: auto;
+  margin: 5%;
+}
+
+.portraet3{
+  height: 9rem;
+  width: auto;
+  margin: 5%;
+}
+
 .footer{
   grid-area: footer;
   background-color: #e8b7b7;
   color: #FFFFFF;
   font-size: 1rem;
-  padding-left: 10%;
+  padding-left: 15%;
 }
 
 .website{
@@ -189,11 +208,24 @@ h1{
 
 }
 
+h2{
+  font-size: 2rem;
+  color: #696969;
+  padding-left: 15%;
+  line-height: 3rem;
+  padding-top: 5%;
+}
+
 p{
   font-size: 1rem;
   color: #696969;
   padding-left: 5%;
   line-height: 1.5rem;
+}
+
+.bokstekst{
+  font-size: 1.5rem;
+  color: #FFFFFF;
 }
 
 button{
@@ -204,23 +236,27 @@ button{
 
 .kontaktknap{
   border-radius: 2rem;
-  border: 1rem;
+  border: 0.2rem;
   padding-left: 1rem;
   padding-right: 1rem;
   grid-area: content;
   margin-left: 10%;
   margin-top: 10%;
   font-size: 1.2rem;
+  border-color: #e8b7b7;
+  border-style: solid;
 }
 
 .ommigknap{
   border-radius: 2rem;
-  border: 1rem;
+  border: 0.2rem;
   padding-left: 1rem;
   padding-right: 1rem;
   grid-area: content;
   margin-left: 5%;
   font-size: 1.2rem;
+  border-color: #e8b7b7;
+  border-style: solid;
 }
 
 /* Undersider*/
@@ -236,14 +272,36 @@ button{
   color: #FFFFFF;
   grid-area: content;
   font-size: 1rem;
-  margin: 3rem;
   padding: 2rem;
   line-height: 1.5rem;
-  border-radius: 1.5rem;
+  margin-top: 5%;
 }
 
+.video{
+  background-color: #696969;
+  color: #FFFFFF;
+  grid-area: content;
+  font-size: 1rem;
+  padding: 2rem;
+  line-height: 1.5rem;
+  margin-top: 5%;
+}
+
+.illustationer{
+  background-color: #696969;
+  color: #FFFFFF;
+  grid-area: content;
+  font-size: 1rem;
+  padding: 2rem;
+  line-height: 1.5rem;
+  margin-top: 5%;
+}
+
+
 .portfolio{
-  background-color:
+  background-color: #FFFFFF;
+  font-size: 1.5rem;
+  grid-area: content;
 }
 
 }
@@ -347,7 +405,7 @@ a:hover{
   float: left;
   grid-area: header;
   margin: 10%;
-  margin-left: 3rem;
+  padding-left: 15%;
 }
 
 .content {
@@ -360,18 +418,31 @@ a:hover{
 }
 
 h1{
-  font-size: 2rem;
-  color: #696969;
-  padding-left: 5%;
-  line-height: 3.5rem;
-
-}
-
-p{
   font-size: 1.5rem;
   color: #696969;
   padding-left: 5%;
-  line-height: 2rem;
+  line-height: 3rem;
+
+}
+
+h2{
+  font-size: 2rem;
+  color: #696969;
+  padding-left: 15%;
+  line-height: 3rem;
+  padding-top: 5%;
+}
+
+p{
+  font-size: 1rem;
+  color: #696969;
+  padding-left: 5%;
+  line-height: 1.5rem;
+}
+
+.bokstekst{
+  font-size: 1.5rem;
+  color: #FFFFFF;
 }
 
 button{
@@ -382,23 +453,27 @@ button{
 
 .kontaktknap{
   border-radius: 2rem;
-  border: 1rem;
+  border: 0.2rem;
   padding-left: 1rem;
   padding-right: 1rem;
   grid-area: content;
   margin-left: 10%;
   margin-top: 10%;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  border-color: #e8b7b7;
+  border-style: solid;
 }
 
 .ommigknap{
   border-radius: 2rem;
-  border: 1rem;
+  border: 0.2rem;
   padding-left: 1rem;
   padding-right: 1rem;
   grid-area: content;
   margin-left: 5%;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  border-color: #e8b7b7;
+  border-style: solid;
 }
 
 
@@ -409,13 +484,92 @@ button{
   float: right;
 }
 
+.havnen{
+  height: 9rem;
+  width: auto;
+  margin: 5%;
+}
+
+.ur{
+  height: 9rem;
+  width: auto;
+  margin: 5%;
+}
+
+.portraet3{
+  height: 9rem;
+  width: auto;
+  margin: 5%;
+}
 
 .footer{
   grid-area: footer;
   background-color: #e8b7b7;
   color: #FFFFFF;
   font-size: 1rem;
+  padding-left: 5%;
   }
+
+  /* Undersider*/
+
+  .ommig{
+    justify-content: center;
+    grid-area: content;
+    font-size: 1.5rem;
+  }
+
+  .foto{
+    background-color: #696969;
+    color: #FFFFFF;
+    grid-area: content;
+    font-size: 1rem;
+    padding: 2rem;
+    line-height: 1.5rem;
+    margin-top: 5%;
+  }
+
+  .video{
+    background-color: #696969;
+    color: #FFFFFF;
+    grid-area: content;
+    font-size: 1rem;
+    padding: 2rem;
+    line-height: 1.5rem;
+    margin-top: 5%;
+  }
+
+  .illustationer{
+    background-color: #696969;
+    color: #FFFFFF;
+    grid-area: content;
+    font-size: 1rem;
+    padding: 2rem;
+    line-height: 1.5rem;
+    margin-top: 5%;
+  }
+
+
+  .portfolio{
+    background-color: #FFFFFF;
+    font-size: 1.5rem;
+    grid-area: content;
+  }
+
+  .kompetencer{
+    font-size: 1rem;
+    grid-area: content;
+  }
+
+.komtekst{
+  font-size: 0.5rem;
+  color: #696969;
+}
+
+.some{
+  font-size: 1rem;
+}
+
+
 
 }
 
@@ -434,6 +588,7 @@ button{
   }
   body{
     background-color: #FFFFFF;
+
   }
 
   .item{
@@ -531,18 +686,31 @@ button{
   }
 
   h1{
-    font-size: 3rem;
-    color: #696969;
-    padding-left: 5%;
-    line-height: 4.5rem;
-
-  }
-
-  p{
     font-size: 1.5rem;
     color: #696969;
     padding-left: 5%;
-    line-height: 2rem;
+    line-height: 3rem;
+
+  }
+
+  h2{
+    font-size: 2rem;
+    color: #696969;
+    padding-left: 15%;
+    line-height: 3rem;
+    padding-top: 5%;
+  }
+
+  p{
+    font-size: 1rem;
+    color: #696969;
+    padding-left: 5%;
+    line-height: 1.5rem;
+  }
+
+  .bokstekst{
+    font-size: 1.5rem;
+    color: #FFFFFF;
   }
 
   button{
@@ -553,23 +721,27 @@ button{
 
   .kontaktknap{
     border-radius: 2rem;
-    border: 1rem;
+    border: 0.3rem;
     padding-left: 1rem;
     padding-right: 1rem;
     grid-area: content;
     margin-left: 10%;
     margin-top: 10%;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+    border-color: #e8b7b7;
+    border-style: solid;
   }
 
   .ommigknap{
     border-radius: 2rem;
-    border: 1rem;
+    border: 0.3rem;
     padding-left: 1rem;
     padding-right: 1rem;
     grid-area: content;
     margin-left: 5%;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+    border-color: #e8b7b7;
+    border-style: solid;
   }
 
   /* Billede */
@@ -579,11 +751,74 @@ button{
     float: right;
   }
 
+  .havnen{
+    height: 9rem;
+    width: auto;
+    margin: 5%;
+  }
+
+  .ur{
+    height: 9rem;
+    width: auto;
+    margin: 5%;
+  }
+
+  .portraet3{
+    height: 9rem;
+    width: auto;
+    margin: 5%;
+  }
 
   .footer{
     grid-area: footer;
     background-color: #e8b7b7;
     color: #FFFFFF;
     font-size: 1rem;
+    padding-left: 5%;
+    }
+
+    /* Undersider*/
+
+    .ommig{
+      justify-content: center;
+      grid-area: content;
+      font-size: 1.5rem;
+    }
+
+    .foto{
+      background-color: #696969;
+      color: #FFFFFF;
+      grid-area: content;
+      font-size: 1rem;
+      padding: 2rem;
+      line-height: 1.5rem;
+      margin-top: 5%;
+    }
+
+    .video{
+      background-color: #696969;
+      color: #FFFFFF;
+      grid-area: content;
+      font-size: 1rem;
+      padding: 2rem;
+      line-height: 1.5rem;
+      margin-top: 5%;
+    }
+
+    .illustationer{
+      background-color: #696969;
+      color: #FFFFFF;
+      grid-area: content;
+      font-size: 1rem;
+      padding: 2rem;
+      line-height: 1.5rem;
+      margin-top: 5%;
+    }
+
+
+    .portfolio{
+      background-color: #FFFFFF;
+      font-size: 1.5rem;
+      grid-area: content;
     }
 }
