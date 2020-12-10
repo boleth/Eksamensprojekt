@@ -23,6 +23,7 @@ margin: 0%;
   "header"
   "menu"
   "content"
+  "kompetencer"
   "footer"
 }
 
@@ -138,6 +139,14 @@ nav {
   margin: 5%;
 }
 
+.portraet4{
+  height: 12.5rem;
+  width: auto;
+  margin: 5%;
+  margin-left: 15%;
+  border-radius: 1.5rem;
+}
+
 .footer{
   grid-area: footer;
   background-color: #e8b7b7;
@@ -209,11 +218,10 @@ h1{
 }
 
 h2{
-  font-size: 2rem;
   color: #696969;
-  padding-left: 15%;
-  line-height: 3rem;
-  padding-top: 5%;
+  font-size: 2rem;
+  text-align: center;
+  margin: 5%;
 }
 
 p{
@@ -304,6 +312,36 @@ button{
   grid-area: content;
 }
 
+.kompetencer{
+  grid-area: kompetencer;
+  background-color: #FFFFFF;
+}
+
+.komtekst{
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  background-color: #696969;
+  text-align: center;
+  line-height: 2rem;
+  padding-top: 5%;
+}
+
+.some{
+
+}
+
+.some{}
+
+.text{
+  font-size: 1rem;
+  background-color: #696969;
+  color: #e8b7b7;
+  text-align: center;
+  line-height: 1.5rem;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
 }
 /* Ipad version */
 
@@ -316,6 +354,7 @@ button{
     "header nav"
     "menu menu"
     "content content"
+    "kompetencer kompetencer"
     "footer footer"
   }
 
@@ -556,18 +595,33 @@ button{
   }
 
   .kompetencer{
-    font-size: 1rem;
-    grid-area: content;
+    grid-area: kompetencer;
   }
 
-.komtekst{
-  font-size: 0.5rem;
-  color: #696969;
-}
+  .komtekst{
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    background-color: #696969;
+    text-align: center;
+    line-height: 2rem;
+    padding-top: 5%;
+  }
 
-.some{
-  font-size: 1rem;
-}
+  .some{
+
+  }
+
+  .some{}
+
+  .text{
+    font-size: 1rem;
+    background-color: #696969;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 5%;
+    margin-bottom: 5%;
+  }
 
 
 
@@ -584,6 +638,7 @@ button{
     grid-template-areas:
     "header menu menu"
     "content content content"
+    "kompetencer kompetencer kompetencer"
     "footer footer footer"
   }
   body{
@@ -626,7 +681,7 @@ button{
     text-decoration: none;
     flex-direction: row;
     display: flex;
-    font-size: 30px;
+    font-size: 2rem;
     grid-area: menu;
     padding-left: 30%;
     padding-bottom: 15%;
@@ -686,10 +741,10 @@ button{
   }
 
   h1{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #696969;
     padding-left: 5%;
-    line-height: 3rem;
+    line-height: 4rem;
 
   }
 
@@ -697,15 +752,15 @@ button{
     font-size: 2rem;
     color: #696969;
     padding-left: 15%;
-    line-height: 3rem;
+    line-height: 3.5rem;
     padding-top: 5%;
   }
 
   p{
-    font-size: 1rem;
+    font-size: 1.8rem;
     color: #696969;
     padding-left: 5%;
-    line-height: 1.5rem;
+    line-height: 3rem;
   }
 
   .bokstekst{
@@ -746,7 +801,7 @@ button{
 
   /* Billede */
   .portraet{
-    height: 20rem;
+    height: 30rem;
     width:auto;
     float: right;
   }
@@ -768,6 +823,12 @@ button{
     width: auto;
     margin: 5%;
   }
+
+.portraet4{
+  height: 9rem;
+  width: auto;
+  margin: 5%;
+}
 
   .footer{
     grid-area: footer;
@@ -820,5 +881,31 @@ button{
       background-color: #FFFFFF;
       font-size: 1.5rem;
       grid-area: content;
+    }
+
+.kompetencer{
+      grid-area: kompetencer;
+      background-color: #e8b7b7;
+    }
+
+.komtekst{
+      font-size: 1.5rem;
+      color: #FFFFFF;
+      background-color: #696969;
+      text-align: center;
+      line-height: 2rem;
+      padding-top: 5%;
+    }
+
+
+
+.text{
+      font-size: 1rem;
+      background-color: #696969;
+      color: #FFFFFF;
+      text-align: left;
+      line-height: 1.5rem;
+      padding: 5%;
+      margin-bottom: 5%;
     }
 }
