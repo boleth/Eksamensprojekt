@@ -162,9 +162,53 @@
     margin-bottom: 5%;
   }
 
+  .text2 {
+    font-size: 1.5rem;
+    background-color: #696969;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 1rem;
+    margin: 5%;
+    padding: 5%;
+  }
+
+  .text3 {
+    font-size: 1.5rem;
+    background-color: #696969;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 1rem;
+    margin: 5%;
+    padding: 5%;
+  }
+
+  .text4 {
+    font-size: 1.5rem;
+    background-color: #696969;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 1rem;
+    margin: 5%;
+    padding: 5%;
+  }
+
   .bokstekst {
     font-size: 1.5rem;
     color: #ffffff;
+  }
+
+  .grid {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "text2"
+      "text3"
+      "text4";
   }
 
   /* Billede*/
@@ -425,6 +469,8 @@
     padding-left: 5%;
     line-height: 3rem;
     padding-top: 5%;
+    text-align: center;
+    margin-right: 5%;
   }
 
   h3 {
@@ -455,6 +501,47 @@
     line-height: 2rem;
     padding: 5%;
     margin-bottom: 5%;
+  }
+
+  .text2 {
+    font-size: 1.5rem;
+    background-color: #696969;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2rem;
+    grid-area: text2;
+    border-radius: 1rem;
+    margin: 5%;
+  }
+
+  .text3 {
+    font-size: 1.5rem;
+    background-color: #696969;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2rem;
+    grid-area: text3;
+    border-radius: 1rem;
+    margin: 5%;
+  }
+
+  .text4 {
+    font-size: 1.5rem;
+    background-color: #696969;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2rem;
+    grid-area: text4;
+    border-radius: 1rem;
+    margin: 5%;
+    padding-top: 5%;
+  }
+
+  .grid {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "text2 text3 text4";
   }
 
   /* Billede*/
@@ -550,7 +637,7 @@
   }
 
   .havnen {
-    height: 9rem;
+    height: 8rem;
     width: auto;
     margin: 5%;
   }
@@ -762,6 +849,8 @@
     padding-left: 10%;
     line-height: 3.5rem;
     padding-top: 5%;
+    text-align: center;
+    padding-right: 5%;
   }
 
   h3 {
@@ -791,6 +880,40 @@
     margin-bottom: 5%;
   }
 
+  .text2 {
+    font-size: 1.5rem;
+    background-color: #696969;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2rem;
+    grid-area: text2;
+    border-radius: 1rem;
+  }
+
+  .text3 {
+    font-size: 1.5rem;
+    background-color: #696969;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2rem;
+    grid-area: text3;
+    border-radius: 1rem;
+  }
+
+  .text4 {
+    font-size: 1.5rem;
+    background-color: #696969;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2rem;
+    grid-area: text4;
+    border-radius: 1rem;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    padding-top: 5%;
+  }
+
   .komtekst {
     font-size: 1.5rem;
     color: #ffffff;
@@ -803,8 +926,15 @@
   }
 
   .bokstekst {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #ffffff;
+  }
+
+  .grid {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "text2 text3 text4";
   }
 
   button {
@@ -822,7 +952,8 @@
     margin-left: 10%;
     margin-top: 10%;
     font-size: 1.8rem;
-    border-color: #e8b7b7;
+    border-color: #d6a7a7;
+    background-color: #e8b7b7;
     border-style: solid;
   }
 
@@ -834,7 +965,8 @@
     grid-area: content;
     margin-left: 5%;
     font-size: 1.8rem;
-    border-color: #e8b7b7;
+    border-color: #d6a7a7;
+    background-color: #e8b7b7;
     border-style: solid;
   }
 
@@ -848,25 +980,21 @@
   .havnen {
     height: 9rem;
     width: auto;
-    margin: 5%;
   }
 
   .ur {
-    height: 9rem;
+    height: 10rem;
     width: auto;
-    margin: 5%;
   }
 
   .portraet3 {
     height: 9rem;
     width: auto;
-    margin: 5%;
   }
 
   .portraet4 {
     height: 30rem;
     width: auto;
-    margin: 5%;
   }
 
   .footer {
@@ -882,29 +1010,10 @@
     justify-content: center;
     grid-area: content;
     font-size: 1.5rem;
+    margin-top: 5%;
   }
 
   .foto {
-    background-color: #696969;
-    color: #ffffff;
-    grid-area: content;
-    font-size: 1rem;
-    padding: 2rem;
-    line-height: 1.5rem;
-    margin-top: 5%;
-  }
-
-  .video {
-    background-color: #696969;
-    color: #ffffff;
-    grid-area: content;
-    font-size: 1rem;
-    padding: 2rem;
-    line-height: 1.5rem;
-    margin-top: 5%;
-  }
-
-  .illustationer {
     background-color: #696969;
     color: #ffffff;
     grid-area: content;
