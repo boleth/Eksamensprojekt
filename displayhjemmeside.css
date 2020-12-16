@@ -234,20 +234,20 @@
   }
 
   .havnen {
-    height: 9rem;
-    width: auto;
+    height: auto;
+    width: 14rem;
     margin: 5%;
   }
 
   .ur {
-    height: 9rem;
-    width: auto;
+    height: auto;
+    width: 14rem;
     margin: 5%;
   }
 
   .portraet3 {
-    height: 9rem;
-    width: auto;
+    height: auto;
+    width: 14rem;
     margin: 5%;
   }
 
@@ -257,6 +257,52 @@
     margin: 5%;
     margin-left: 15%;
     border-radius: 1.5rem;
+  }
+
+  .sving {
+    height: auto;
+    width: 14rem;
+    margin: 5%;
+  }
+
+  .water {
+    height: auto;
+    width: 14rem;
+    margin: 5%;
+  }
+
+  .bear {
+    height: auto;
+    width: 14rem;
+    margin: 5%;
+  }
+
+  .uphouse {
+    height: auto;
+    width: 14rem;
+    margin: 5%;
+  }
+
+  .poster {
+    height: auto;
+    width: 14rem;
+    margin: 5%;
+  }
+
+  /* Lavet med hjælp fra - https://www.youtube.com/watch?v=9YffrCViTVk*/
+  .iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    margin: 2px;
+    height: 0;
+  }
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .footer {
@@ -271,7 +317,7 @@
     display: none;
   }
 
-  /* Hover menu*/
+  /* Hover menu lavet med hjælp fra - https://www.w3schools.com/howto/howto_css_menu_icon.asp*/
   .drop {
     background-color: #e8b7b7;
     color: #ffffff;
@@ -296,9 +342,8 @@
     display: none;
     position: absolute;
     background-color: #e8b7b7;
-    z-index: auto;
     width: 200px;
-    z-index: 1;
+    z-index: auto;
   }
 
   .dropdownnav a {
@@ -384,6 +429,7 @@
     padding-top: 5%;
   }
 
+  /* Lavet med hjælp fra - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_style_hr*/
   hr.streg {
     color: #696969;
     background-color: #ffffff;
@@ -637,20 +683,20 @@
   }
 
   .havnen {
-    height: 8rem;
-    width: auto;
+    height: auto;
+    width: 12rem;
     margin: 5%;
   }
 
   .ur {
-    height: 9rem;
-    width: auto;
+    height: auto;
+    width: 12rem;
     margin: 5%;
   }
 
   .portraet3 {
-    height: 9rem;
-    width: auto;
+    height: auto;
+    width: 12rem;
     margin: 5%;
   }
 
@@ -659,6 +705,52 @@
     width: auto;
     border-radius: 1.5rem;
     margin: 5%;
+  }
+
+  .sving {
+    height: auto;
+    width: 12rem;
+    margin: 5%;
+  }
+
+  .water {
+    height: auto;
+    width: 12rem;
+    margin: 5%;
+  }
+
+  .bear {
+    height: auto;
+    width: 12rem;
+    margin: 5%;
+  }
+
+  .uphouse {
+    height: auto;
+    width: 12rem;
+    margin: 5%;
+  }
+
+  .poster {
+    height: auto;
+    width: 12rem;
+    margin: 5%;
+  }
+
+  /* Lavet med hjælp fra - https://www.youtube.com/watch?v=9YffrCViTVk*/
+  .iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    padding-right: 15%;
+    height: 0;
+  }
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   /* Undersider*/
@@ -719,6 +811,7 @@
     padding-top: 5%;
   }
 
+  /* Lavet med hjælp fra - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_style_hr*/
   hr.streg {
     color: #696969;
     background-color: #ffffff;
@@ -978,23 +1071,73 @@
   }
 
   .havnen {
-    height: 9rem;
-    width: auto;
+    height: auto;
+    width: 18rem;
+    margin: 5%;
   }
 
   .ur {
-    height: 10rem;
-    width: auto;
+    height: auto;
+    width: 18rem;
+    margin: 5%;
   }
 
   .portraet3 {
-    height: 9rem;
-    width: auto;
+    height: auto;
+    width: 18rem;
+    margin: 5%;
   }
 
   .portraet4 {
     height: 30rem;
     width: auto;
+  }
+
+  .sving {
+    height: auto;
+    width: 18rem;
+    margin: 5%;
+  }
+
+  .water {
+    height: auto;
+    width: 18rem;
+    margin: 5%;
+  }
+
+  .bear {
+    height: auto;
+    width: 18rem;
+    margin: 5%;
+  }
+
+  .uphouse {
+    height: auto;
+    width: 18rem;
+    margin: 5%;
+  }
+
+  .poster {
+    height: auto;
+    width: 18rem;
+    margin: 5%;
+  }
+
+  /* Lavet med hjælp fra - https://www.youtube.com/watch?v=9YffrCViTVk*/
+  .iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    padding-right: 20%;
+    margin: 2px;
+    height: 0;
+  }
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .footer {
@@ -1034,6 +1177,7 @@
     background-color: #ffffff;
   }
 
+  /* Lavet med hjælp fra - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_style_hr*/
   hr.streg {
     color: #696969;
     background-color: #ffffff;
